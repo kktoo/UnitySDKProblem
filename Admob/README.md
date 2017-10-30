@@ -1,7 +1,7 @@
 ## 常用官方文档地址 ##
 
 Github中的unity的plugin以及example
-[https://support.google.com/admob/?hl=zh-Hans#topic=7383089](https://support.google.com/admob/?hl=zh-Hans#topic=7383089 "Github中的unity的plugin以及example")
+[https://github.com/unity-plugins/Unity-Admob](https://github.com/unity-plugins/Unity-Admob)
 
 官方帮助中心文档-中文
 [https://support.google.com/admob/?hl=zh-Hans#topic=7383089](https://support.google.com/admob/?hl=zh-Hans#topic=7383089)

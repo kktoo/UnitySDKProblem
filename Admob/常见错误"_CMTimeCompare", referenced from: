@@ -1,0 +1,36 @@
+xcode8下，接入Admob，导入FrameWork后，出现大量编译错误：
+
+"_OBJC_CLASS_$_MPVolumeView", referenced from:
+      objc-class-ref in GoogleMobileAds(flat-arm64)
+  "_CMTimeMakeWithSeconds", referenced from:
+      l15775 in GoogleMobileAds(flat-arm64)
+  "_CMTimeRangeGetEnd", referenced from:
+      l15584 in GoogleMobileAds(flat-arm64)
+      l15778 in GoogleMobileAds(flat-arm64)
+  "_kCMTimeZero", referenced from:
+      l15549 in GoogleMobileAds(flat-arm64)
+      l15584 in GoogleMobileAds(flat-arm64)
+      l15773 in GoogleMobileAds(flat-arm64)
+      l15778 in GoogleMobileAds(flat-arm64)
+  "_CMTimeCompare", referenced from:
+      l15549 in GoogleMobileAds(flat-arm64)
+      l15584 in GoogleMobileAds(flat-arm64)
+      l15778 in GoogleMobileAds(flat-arm64)
+  "_OBJC_CLASS_$_MFMessageComposeViewController", referenced from:
+      objc-class-ref in GoogleMobileAds(flat-arm64)
+  "_OBJC_CLASS_$_CMMotionManager", referenced from:
+      objc-class-ref in GoogleMobileAds(flat-arm64)
+  "_CMTimeMake", referenced from:
+      l15548 in GoogleMobileAds(flat-arm64)
+      l15792 in GoogleMobileAds(flat-arm64)
+  "_CMTimeSubtract", referenced from:
+      l15778 in GoogleMobileAds(flat-arm64)
+  "_CMTimeGetSeconds", referenced from:
+      l15584 in GoogleMobileAds(flat-arm64)
+      l15752 in GoogleMobileAds(flat-arm64)
+      l15778 in GoogleMobileAds(flat-arm64)
+      l15803 in GoogleMobileAds(flat-arm64)
+      l15804 in GoogleMobileAds(flat-arm64)
+
+原因是除了加入sdk的FrameWork之外，还需要加入其他FrameWork，详情如下：
+

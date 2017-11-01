@@ -1,0 +1,18 @@
+现象描述：
+
+xcode8中接入tapjoy sdk后，报编译错误：
+
+Undefined symbols for architecture arm64:
+  "_SLServiceTypeTwitter", referenced from:
+      -[TJAdUnitJSBridge share:callback:] in Tapjoy(Tapjoy)
+  "_SLServiceTypeFacebook", referenced from:
+      -[TJAdUnitJSBridge share:callback:] in Tapjoy(Tapjoy)
+  "_SLServiceTypeSinaWeibo", referenced from:
+      -[TJAdUnitJSBridge share:callback:] in Tapjoy(Tapjoy)
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+解决方法：
+
+lib文件夹中lite.a包删掉，other link flags改为-ObjC；导入parse、social、accounts、bolts这几个库；
+

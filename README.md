@@ -1,6 +1,6 @@
-# Solve-Unity-SDK-Problem
-讨论、总结和解决unity接入sdk过程中的问题.
- 
+# Unity SDK Problem
+讨论、总结和解决unity接入sdk过程中的问题，主要面向google play等海外市场.
+
 接入sdk遇到有问题欢迎给我提issue 或者咨询问答群,google商店和亚马逊商店的问题请复制拒绝英文描述到群,更方便别人帮助解答,
 
 问答群12677805，(这里无广告,都是真开发,纯讨论审核技术的QQ群)
